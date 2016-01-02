@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4D79DE71C383FAA00C2B123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */; };
+		E4D79DE91C383FAA00C2B123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DE81C383FAA00C2B123 /* ViewController.swift */; };
+		E4D79DEC1C383FAA00C2B123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DEA1C383FAA00C2B123 /* Main.storyboard */; };
+		E4D79DEE1C383FAA00C2B123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DED1C383FAA00C2B123 /* Assets.xcassets */; };
+		E4D79DF11C383FAA00C2B123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DEF1C383FAA00C2B123 /* LaunchScreen.storyboard */; };
+		E4D79DFC1C383FAA00C2B123 /* BroccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DFB1C383FAA00C2B123 /* BroccoliTests.swift */; };
+		E4D79E071C383FAA00C2B123 /* BroccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79E061C383FAA00C2B123 /* BroccoliUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4D79DF81C383FAA00C2B123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D79DDB1C383FAA00C2B123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D79DE21C383FAA00C2B123;
+			remoteInfo = Broccoli;
+		};
+		E4D79E031C383FAA00C2B123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4D79DDB1C383FAA00C2B123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D79DE21C383FAA00C2B123;
+			remoteInfo = Broccoli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4D79DE31C383FAA00C2B123 /* Broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4D79DE81C383FAA00C2B123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4D79DEB1C383FAA00C2B123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4D79DED1C383FAA00C2B123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4D79DF01C383FAA00C2B123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4D79DF21C383FAA00C2B123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D79DF71C383FAA00C2B123 /* BroccoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroccoliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D79DFB1C383FAA00C2B123 /* BroccoliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroccoliTests.swift; sourceTree = "<group>"; };
+		E4D79DFD1C383FAA00C2B123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D79E021C383FAA00C2B123 /* BroccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroccoliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D79E061C383FAA00C2B123 /* BroccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroccoliUITests.swift; sourceTree = "<group>"; };
+		E4D79E081C383FAA00C2B123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4D79DE01C383FAA00C2B123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79DF41C383FAA00C2B123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79DFF1C383FAA00C2B123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4D79DDA1C383FAA00C2B123 = {
+			isa = PBXGroup;
+			children = (
+				E4D79DE51C383FAA00C2B123 /* Broccoli */,
+				E4D79DFA1C383FAA00C2B123 /* BroccoliTests */,
+				E4D79E051C383FAA00C2B123 /* BroccoliUITests */,
+				E4D79DE41C383FAA00C2B123 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4D79DE41C383FAA00C2B123 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4D79DE31C383FAA00C2B123 /* Broccoli.app */,
+				E4D79DF71C383FAA00C2B123 /* BroccoliTests.xctest */,
+				E4D79E021C383FAA00C2B123 /* BroccoliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4D79DE51C383FAA00C2B123 /* Broccoli */ = {
+			isa = PBXGroup;
+			children = (
+				E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */,
+				E4D79DE81C383FAA00C2B123 /* ViewController.swift */,
+				E4D79DEA1C383FAA00C2B123 /* Main.storyboard */,
+				E4D79DED1C383FAA00C2B123 /* Assets.xcassets */,
+				E4D79DEF1C383FAA00C2B123 /* LaunchScreen.storyboard */,
+				E4D79DF21C383FAA00C2B123 /* Info.plist */,
+			);
+			path = Broccoli;
+			sourceTree = "<group>";
+		};
+		E4D79DFA1C383FAA00C2B123 /* BroccoliTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D79DFB1C383FAA00C2B123 /* BroccoliTests.swift */,
+				E4D79DFD1C383FAA00C2B123 /* Info.plist */,
+			);
+			path = BroccoliTests;
+			sourceTree = "<group>";
+		};
+		E4D79E051C383FAA00C2B123 /* BroccoliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4D79E061C383FAA00C2B123 /* BroccoliUITests.swift */,
+				E4D79E081C383FAA00C2B123 /* Info.plist */,
+			);
+			path = BroccoliUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4D79DE21C383FAA00C2B123 /* Broccoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D79E0B1C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "Broccoli" */;
+			buildPhases = (
+				E4D79DDF1C383FAA00C2B123 /* Sources */,
+				E4D79DE01C383FAA00C2B123 /* Frameworks */,
+				E4D79DE11C383FAA00C2B123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Broccoli;
+			productName = Broccoli;
+			productReference = E4D79DE31C383FAA00C2B123 /* Broccoli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4D79DF61C383FAA00C2B123 /* BroccoliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D79E0E1C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliTests" */;
+			buildPhases = (
+				E4D79DF31C383FAA00C2B123 /* Sources */,
+				E4D79DF41C383FAA00C2B123 /* Frameworks */,
+				E4D79DF51C383FAA00C2B123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D79DF91C383FAA00C2B123 /* PBXTargetDependency */,
+			);
+			name = BroccoliTests;
+			productName = BroccoliTests;
+			productReference = E4D79DF71C383FAA00C2B123 /* BroccoliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4D79E011C383FAA00C2B123 /* BroccoliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D79E111C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliUITests" */;
+			buildPhases = (
+				E4D79DFE1C383FAA00C2B123 /* Sources */,
+				E4D79DFF1C383FAA00C2B123 /* Frameworks */,
+				E4D79E001C383FAA00C2B123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4D79E041C383FAA00C2B123 /* PBXTargetDependency */,
+			);
+			name = BroccoliUITests;
+			productName = BroccoliUITests;
+			productReference = E4D79E021C383FAA00C2B123 /* BroccoliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4D79DDB1C383FAA00C2B123 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Richard Thomson";
+				TargetAttributes = {
+					E4D79DE21C383FAA00C2B123 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					E4D79DF61C383FAA00C2B123 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E4D79DE21C383FAA00C2B123;
+					};
+					E4D79E011C383FAA00C2B123 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = E4D79DE21C383FAA00C2B123;
+					};
+				};
+			};
+			buildConfigurationList = E4D79DDE1C383FAA00C2B123 /* Build configuration list for PBXProject "Broccoli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4D79DDA1C383FAA00C2B123;
+			productRefGroup = E4D79DE41C383FAA00C2B123 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4D79DE21C383FAA00C2B123 /* Broccoli */,
+				E4D79DF61C383FAA00C2B123 /* BroccoliTests */,
+				E4D79E011C383FAA00C2B123 /* BroccoliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4D79DE11C383FAA00C2B123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D79DF11C383FAA00C2B123 /* LaunchScreen.storyboard in Resources */,
+				E4D79DEE1C383FAA00C2B123 /* Assets.xcassets in Resources */,
+				E4D79DEC1C383FAA00C2B123 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79DF51C383FAA00C2B123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79E001C383FAA00C2B123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4D79DDF1C383FAA00C2B123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D79DE91C383FAA00C2B123 /* ViewController.swift in Sources */,
+				E4D79DE71C383FAA00C2B123 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79DF31C383FAA00C2B123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D79DFC1C383FAA00C2B123 /* BroccoliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4D79DFE1C383FAA00C2B123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4D79E071C383FAA00C2B123 /* BroccoliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4D79DF91C383FAA00C2B123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D79DE21C383FAA00C2B123 /* Broccoli */;
+			targetProxy = E4D79DF81C383FAA00C2B123 /* PBXContainerItemProxy */;
+		};
+		E4D79E041C383FAA00C2B123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D79DE21C383FAA00C2B123 /* Broccoli */;
+			targetProxy = E4D79E031C383FAA00C2B123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4D79DEA1C383FAA00C2B123 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D79DEB1C383FAA00C2B123 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4D79DEF1C383FAA00C2B123 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4D79DF01C383FAA00C2B123 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4D79E091C383FAA00C2B123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4D79E0A1C383FAA00C2B123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D79E0C1C383FAA00C2B123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Broccoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.Broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4D79E0D1C383FAA00C2B123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Broccoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.Broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4D79E0F1C383FAA00C2B123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BroccoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.BroccoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broccoli.app/Broccoli";
+			};
+			name = Debug;
+		};
+		E4D79E101C383FAA00C2B123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BroccoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.BroccoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broccoli.app/Broccoli";
+			};
+			name = Release;
+		};
+		E4D79E121C383FAA00C2B123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroccoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.BroccoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Broccoli;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E4D79E131C383FAA00C2B123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BroccoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.BroccoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Broccoli;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4D79DDE1C383FAA00C2B123 /* Build configuration list for PBXProject "Broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D79E091C383FAA00C2B123 /* Debug */,
+				E4D79E0A1C383FAA00C2B123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D79E0B1C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "Broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D79E0C1C383FAA00C2B123 /* Debug */,
+				E4D79E0D1C383FAA00C2B123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4D79E0E1C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D79E0F1C383FAA00C2B123 /* Debug */,
+				E4D79E101C383FAA00C2B123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4D79E111C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4D79E121C383FAA00C2B123 /* Debug */,
+				E4D79E131C383FAA00C2B123 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4D79DDB1C383FAA00C2B123 /* Project object */;
+}
