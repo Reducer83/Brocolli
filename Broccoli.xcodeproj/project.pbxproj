@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40F2C331C39B897002A15B8 /* WriteCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40F2C321C39B897002A15B8 /* WriteCardsViewController.swift */; };
+		E4C52C0D1C416587004A5C55 /* GameStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C52C0C1C416587004A5C55 /* GameStartViewController.swift */; };
+		E4C52C0F1C4178EC004A5C55 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C52C0E1C4178EC004A5C55 /* GameViewController.swift */; };
 		E4D79DE71C383FAA00C2B123 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */; };
-		E4D79DE91C383FAA00C2B123 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DE81C383FAA00C2B123 /* ViewController.swift */; };
+		E4D79DE91C383FAA00C2B123 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DE81C383FAA00C2B123 /* HomeViewController.swift */; };
 		E4D79DEC1C383FAA00C2B123 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DEA1C383FAA00C2B123 /* Main.storyboard */; };
 		E4D79DEE1C383FAA00C2B123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DED1C383FAA00C2B123 /* Assets.xcassets */; };
 		E4D79DF11C383FAA00C2B123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4D79DEF1C383FAA00C2B123 /* LaunchScreen.storyboard */; };
 		E4D79DFC1C383FAA00C2B123 /* BroccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79DFB1C383FAA00C2B123 /* BroccoliTests.swift */; };
 		E4D79E071C383FAA00C2B123 /* BroccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79E061C383FAA00C2B123 /* BroccoliUITests.swift */; };
+		E4D79E161C38496700C2B123 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79E141C38496700C2B123 /* TeamsViewController.swift */; };
+		E4D79E191C38554C00C2B123 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79E181C38554C00C2B123 /* Game.swift */; };
+		E4D79E1B1C3855AE00C2B123 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D79E1A1C3855AE00C2B123 /* Team.swift */; };
+		E4DF04851C43080B0024082A /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF04841C43080B0024082A /* FinishViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E40F2C321C39B897002A15B8 /* WriteCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WriteCardsViewController.swift; path = ../WriteCardsViewController.swift; sourceTree = "<group>"; };
+		E4C52C0C1C416587004A5C55 /* GameStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartViewController.swift; sourceTree = "<group>"; };
+		E4C52C0E1C4178EC004A5C55 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E4D79DE31C383FAA00C2B123 /* Broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E4D79DE81C383FAA00C2B123 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4D79DE81C383FAA00C2B123 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E4D79DEB1C383FAA00C2B123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4D79DED1C383FAA00C2B123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4D79DF01C383FAA00C2B123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		E4D79E021C383FAA00C2B123 /* BroccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroccoliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D79E061C383FAA00C2B123 /* BroccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroccoliUITests.swift; sourceTree = "<group>"; };
 		E4D79E081C383FAA00C2B123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4D79E141C38496700C2B123 /* TeamsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		E4D79E181C38554C00C2B123 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E4D79E1A1C3855AE00C2B123 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		E4DF04841C43080B0024082A /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +112,15 @@
 			isa = PBXGroup;
 			children = (
 				E4D79DE61C383FAA00C2B123 /* AppDelegate.swift */,
-				E4D79DE81C383FAA00C2B123 /* ViewController.swift */,
+				E4D79DE81C383FAA00C2B123 /* HomeViewController.swift */,
+				E4D79E141C38496700C2B123 /* TeamsViewController.swift */,
+				E40F2C321C39B897002A15B8 /* WriteCardsViewController.swift */,
+				E4C52C0C1C416587004A5C55 /* GameStartViewController.swift */,
+				E4C52C0E1C4178EC004A5C55 /* GameViewController.swift */,
+				E4DF04841C43080B0024082A /* FinishViewController.swift */,
 				E4D79DEA1C383FAA00C2B123 /* Main.storyboard */,
+				E4D79E181C38554C00C2B123 /* Game.swift */,
+				E4D79E1A1C3855AE00C2B123 /* Team.swift */,
 				E4D79DED1C383FAA00C2B123 /* Assets.xcassets */,
 				E4D79DEF1C383FAA00C2B123 /* LaunchScreen.storyboard */,
 				E4D79DF21C383FAA00C2B123 /* Info.plist */,
@@ -256,8 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D79DE91C383FAA00C2B123 /* ViewController.swift in Sources */,
+				E4D79DE91C383FAA00C2B123 /* HomeViewController.swift in Sources */,
+				E4D79E161C38496700C2B123 /* TeamsViewController.swift in Sources */,
+				E4DF04851C43080B0024082A /* FinishViewController.swift in Sources */,
+				E4C52C0D1C416587004A5C55 /* GameStartViewController.swift in Sources */,
 				E4D79DE71C383FAA00C2B123 /* AppDelegate.swift in Sources */,
+				E4C52C0F1C4178EC004A5C55 /* GameViewController.swift in Sources */,
+				E4D79E1B1C3855AE00C2B123 /* Team.swift in Sources */,
+				E4D79E191C38554C00C2B123 /* Game.swift in Sources */,
+				E40F2C331C39B897002A15B8 /* WriteCardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,9 +426,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Broccoli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.Broccoli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -409,9 +439,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Broccoli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ritchie.Broccoli;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +514,7 @@
 				E4D79E0D1C383FAA00C2B123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4D79E0E1C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +523,7 @@
 				E4D79E101C383FAA00C2B123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4D79E111C383FAA00C2B123 /* Build configuration list for PBXNativeTarget "BroccoliUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +532,7 @@
 				E4D79E131C383FAA00C2B123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
