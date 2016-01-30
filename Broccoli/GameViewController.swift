@@ -37,42 +37,51 @@ class GameViewController: UIViewController {
         CurrentGame.GoScore = CurrentGame.GoScore + 1
         CurrentGame.teams[CurrentGame.activeTeam].TeamScore = CurrentGame.teams[CurrentGame.activeTeam].TeamScore + 1
         
-        //Remove card which has been guessed
-        CurrentGame.availCards.removeAtIndex(cardNumber)
         
-        //Logic for removing passed card from pass array
+            //If there are still cards left in array, select another card
         
-        
-        if CurrentGame.availCards.isEmpty == false {
-        CardNameLabel.text = SelectCard()
-            }
-        else {
-            
-            //If there are cards in pass array, choose one of those cards
-            //If pass array is empty
-            finalCard()
-            // Deal with running out of cards!!
-            }
+            if CurrentGame.availCards.isEmpty == false {
+                CurrentGame.availCards.removeAtIndex(cardNumber)
+                CardNameLabel.text = SelectCard()
+                
+                }
+                else
+                {
+                        // if there are passes choose card from pass array
+                if CurrentGame.passedArray.count > 0 {
+                CurrentGame.passedArray.removeAtIndex(cardNumber)
+                    }
+                    if CurrentGame.passedArray.count > 0 {
+                CardNameLabel.text = SelectCard()
+                            //remove appropraite card from pass array
+                        }
+                else{
+                finalCard()
+                    }
+        }
     }
     
     
     @IBOutlet var PassLabel: UIButton!
     @IBAction func PassFunction(sender: AnyObject) {
         
-        //remove a pass
-        //Add passed card to passed array
-        //Generate random card
-        
-        
-        /*
-        passes = passes - 1
-        if passes > 0 {
-            var lastCard = CardNameLabel.text
-            CardNameLabel.text = SelectCard()
-                if CardNameLabel.text = lastCard [
-            ]
+        if CurrentGame.passesRemaining == 0 {
+            // show error msg
         }
-*/
+        
+        if CurrentGame.passesRemaining > 0 {
+        //Remove Pass
+        CurrentGame.passesRemaining = CurrentGame.passesRemaining - 1
+        
+        //remove card from avail cards and add to passed array
+        
+        CurrentGame.passedArray.append(CurrentGame.availCards[cardNumber])
+        CurrentGame.availCards.removeAtIndex(cardNumber)
+            
+        //pick next card
+        CardNameLabel.text = SelectCard()
+        }
+        
         }
     
     
@@ -87,10 +96,15 @@ class GameViewController: UIViewController {
     
     func SelectCard() -> String {
         
+        if CurrentGame.availCards.count > 0 {
         cardNumber = Int(arc4random_uniform(UInt32(CurrentGame.availCards.count)))
-
         return CurrentGame.availCards[cardNumber]
-        
+        }
+        else
+        {
+        cardNumber = Int(arc4random_uniform(UInt32(CurrentGame.passedArray.count)))
+        return CurrentGame.passedArray[cardNumber]
+        }
     }
     
     func gameTimerCountdown() {
@@ -122,13 +136,13 @@ class GameViewController: UIViewController {
         GotItButtonLabel.enabled = false
         PassLabel.enabled = false
         ResumeButton.enabled = true
-        
-        
-        // Provide restard buttons
+    
         
         
         // Increment round by 1
         CurrentGame.Round = CurrentGame.Round + 1
+        
+        //
     }
     
     func restartGo() {
@@ -148,6 +162,9 @@ class GameViewController: UIViewController {
         
         // Hide "out of cards message"
         InfoLabel.text = ""
+        
+        //Reset passes
+        CurrentGame.passesRemaining = 2
     }
     
     func timerEnd() {
@@ -159,6 +176,10 @@ class GameViewController: UIViewController {
         GotItButtonLabel.enabled = false
         PassLabel.enabled = false
         SeeScoresButton.enabled = true
+        
+        // TODO
+        // Merge avail cards with passes
+        CurrentGame.availCards = CurrentGame.availCards + CurrentGame.passedArray
         
         // increment active team by 1
         
@@ -207,6 +228,9 @@ class GameViewController: UIViewController {
         SeeScoresButton.backgroundColor = UIColor.greenColor()
         clockImageView.image = UIImage(named:"clockFace")
         CardImageView.image = UIImage(named:"paperScrap")
+        
+        CurrentGame.passesRemaining = 2
+        CurrentGame.passedArray = []
 
         
         // Do any additional setup after loading the view.
