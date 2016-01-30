@@ -183,7 +183,7 @@ class GameViewController: UIViewController {
         
         // increment active team by 1
         
-        if CurrentGame.activeTeam == CurrentGame.teams.count {
+        if CurrentGame.activeTeam + 1 == CurrentGame.teams.count {
             CurrentGame.activeTeam = 0
         }
         else {
